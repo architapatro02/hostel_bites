@@ -1,3 +1,4 @@
+import 'package:hostel_bites/home1.dart';
 import 'package:hostel_bites/register.dart';
 import 'package:flutter/material.dart';
 
@@ -78,7 +79,11 @@ class _MyLoginState extends State<MyLogin> {
                           backgroundColor: Colors.orange,
                           child: IconButton(
                             color: Colors.black,
-                            onPressed: (){},
+                            onPressed: (){
+                              Navigator.pushReplacement(context, MaterialPageRoute(
+                                  builder: (context)=>UserHome())
+                              );
+                              },
                             icon: Icon(Icons.arrow_forward),
                           ),
                         )

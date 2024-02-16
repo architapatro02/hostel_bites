@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostel_bites/NavBar.dart';
 
 class UserHome extends StatefulWidget {
   const UserHome({super.key});
@@ -17,6 +18,7 @@ class _UserHomeState extends State<UserHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavBar(),
       body: Center(
         child: widgetList[myIndex],
       ),
